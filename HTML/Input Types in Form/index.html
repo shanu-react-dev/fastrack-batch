@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Input Types in HTML</h1>
+    <form action="">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="enter username"
+        required
+        minlength="3"
+        maxlength="15"
+      />
+
+      <br /><br />
+      <label for="age">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        placeholder="enter age"
+        min="18"
+        max="30"
+        required
+      />
+
+      <br /><br />
+      <label for="gender">Gender</label>
+
+      <input type="radio" name="gender" id="male" value="male" checked />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="others" value="others" />
+      <label for="others">Others</label>
+
+      <br /><br />
+      <label for="skills">Skills</label>
+
+      <input type="checkbox" name="skills" id="java" value="java" />
+      <label for="java">Java</label>
+      <input type="checkbox" name="skills" id="python" value="python" />
+      <label for="python">Python</label>
+      <input type="checkbox" name="skills" id="ruby" value="ruby" />
+      <label for="ruby">Ruby</label>
+      <input type="checkbox" name="skills" id="c++" value="c++" />
+      <label for="c++">C++</label>
+      <input type="checkbox" name="skills" id="c" value="c" checked />
+      <label for="c">C</label>
+
+      <br /><br />
+      <label for="">Select Your country:</label>
+
+      <select name="country" id="country">
+        <option value="">----------Select-----------</option>
+        <option value="India">India</option>
+        <option value="Russia">Russia</option>
+        <option value="Morocco" selected>Morocco</option>
+        <option value="VeticanCity">VeticanCity</option>
+        <option value="vietnam">Vietnam</option>
+        <option value="Sweden">Sweden</option>
+      </select>
+
+      <br /><br />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        pattern="[A-Za-z0-9 !@#$%^&*]{8,20}"
+        placeholder="Enter Password"
+      />
+
+      <br /><br />
+      <label for="dob">Select Date of Birth</label>
+      <input
+        type="date"
+        name="dob"
+        id="dob"
+        required
+        min="2000-12-01"
+        max="2005-01-01"
+      />
+      <!-- <input
+        type="datetime-local"
+        name="dob"
+        id="dob"
+        required
+        min="2000-12-01"
+        max="2005-01-01"
+      /> -->
+
+      <br /><br />
+      <label for="instaId">Insta ID URL</label>
+      <input type="url" name="instaId" id="instaId" required />
+
+      <br /><br />
+      <!-- <input type="time" name="" id=""> -->
+
+      <label for="img">Upload your Image</label>
+      <input type="file" name="img" id="img" accept=".png, .jpeg" />
+
+      <br /><br />
+      <label for="email">email ID</label>
+      <input type="email" name="email" id="email" required />
+
+      <br /><br />
+      <label for="color">Choose your favourite color</label>
+      <input type="color" name="color" id="color" />
+
+      <br /><br />
+      <label for="feedback">Write a feedback</label>
+      <textarea name="feedback" id="" cols="50" rows="5"></textarea>
+
+      <input type="submit" value="Submit my form" />
+      <input type="reset" value="Reset the form" />
+      <input type="button" value="Dummy button" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

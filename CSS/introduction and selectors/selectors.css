@@ -1,0 +1,42 @@
+#heading {
+  color: red;
+}
+
+.id {
+  color: navy;
+}
+
+.class {
+  color: blueviolet;
+}
+
+.tag {
+  color: coral;
+}
+
+.group {
+  color: cornflowerblue;
+}
+
+.univerese {
+  color: darkcyan;
+}
+
+.sel {
+  /* color: rgb(226, 154, 46); */
+  font-style: italic;
+  /* color: aquamarine; */
+}
+/* 
+li{
+    color: yellow;
+} */
+
+.pClass,
+#mypseudo {
+  color: lightgreen;
+}
+
+* {
+  /* background-color: rgba(128, 0, 128, 0.404); */
+}
